@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="starter-template">
+        <h1>Dodaj produkt do listy zakupów</h1>
+        <p class="lead">Wybierz produkt, który chcesz zakupić<br> Wpisz cenę, ilość oraz wybierz sklep z listy</p>
+
+    <br><br>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.nazwa_towar }}
+            {{ form.cena }}
+            {{ form.ilosc }}
+            {{ form.nazwa_sklep }}
+            <input type="submit" value="Dodaj">
+        </form>
+</div>
+
+{% endblock %}
