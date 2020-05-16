@@ -1,4 +1,4 @@
-# django shop app
+# django shop app by Mateusz Domalążek 215705
 
 localhost/polls
 
